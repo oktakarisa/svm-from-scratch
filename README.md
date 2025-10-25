@@ -153,6 +153,31 @@ predictions = svm.predict(X_test_scaled)
 
 ---
 
+### **Results & Visualizations**
+
+#### **Problem 5: Decision Boundary Visualization**
+
+**Scratch SVM (Linear Kernel)**  
+![Scratch SVM Linear](plots/scratch_svm_linear.png)
+
+**scikit-learn SVM (Linear Kernel)**  
+![sklearn SVM Linear](plots/sklearn_svm_linear.png)
+
+#### **Problem 6: Polynomial Kernel (Advanced)**
+
+**Scratch SVM (Polynomial Kernel)**  
+![Scratch SVM Polynomial](plots/scratch_svm_polynomial.png)
+
+**scikit-learn SVM (Polynomial Kernel)**  
+![sklearn SVM Polynomial](plots/sklearn_svm_polynomial.png)
+
+#### **Kernel Comparison**
+
+**Linear vs Polynomial Kernel**  
+![Kernel Comparison](plots/kernel_comparison.png)
+
+---
+
 ### **Files Structure**
 
 ```
