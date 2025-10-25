@@ -1,0 +1,196 @@
+
+======================================================================
+  SVM FROM SCRATCH - COMPREHENSIVE TEST SUITE
+======================================================================
+
+  Test started at: 2025-10-25 12:55:31
+
+======================================================================
+  Problem 6-7: Simple Dataset 2 with Linear Kernel
+======================================================================
+
+[1] Generating Simple Dataset 2...
+    Training samples: 140
+    Test samples: 60
+
+[2] Training Scratch SVM (Linear Kernel)...
+
+[3] Scratch SVM Results:
+    Training time: 9.0274 seconds
+
+Training Metrics:
+  Accuracy:  1.0000
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+
+  Confusion Matrix:
+                Predicted
+                -1    1
+  Actual  -1     70     0
+          1       0    70
+
+Test Metrics:
+  Accuracy:  1.0000
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+
+  Confusion Matrix:
+                Predicted
+                -1    1
+  Actual  -1     30     0
+          1       0    30
+
+[4] Training scikit-learn SVM (Linear Kernel)...
+
+[5] scikit-learn SVM Results:
+    Training time: 0.0021 seconds
+
+Training Metrics:
+  Accuracy:  1.0000
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+
+  Confusion Matrix:
+                Predicted
+                -1    1
+  Actual  -1     70     0
+          1       0    70
+
+Test Metrics:
+  Accuracy:  1.0000
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+
+  Confusion Matrix:
+                Predicted
+                -1    1
+  Actual  -1     30     0
+          1       0    30
+
+[6] Comparison Summary:
+    Metric          Scratch (Test)  sklearn (Test)  Difference     
+    ------------------------------------------------------------
+    Accuracy        1.0000          1.0000          0.0000         
+    Precision       1.0000          1.0000          0.0000         
+    Recall          1.0000          1.0000          0.0000         
+    F1-Score        1.0000          1.0000          0.0000         
+
+    Support Vectors 14              3              
+
+======================================================================
+  Problem 8: Non-linear Dataset with Polynomial Kernel
+======================================================================
+
+[1] Generating Non-linear Dataset...
+    Training samples: 140
+    Test samples: 60
+
+[2] Training Scratch SVM (Polynomial Kernel)...
+
+[3] Scratch SVM (Polynomial) Results:
+    Training time: 13.1742 seconds
+
+Training Metrics:
+  Accuracy:  1.0000
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+
+  Confusion Matrix:
+                Predicted
+                -1    1
+  Actual  -1     70     0
+          1       0    70
+
+Test Metrics:
+  Accuracy:  1.0000
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+
+  Confusion Matrix:
+                Predicted
+                -1    1
+  Actual  -1     30     0
+          1       0    30
+
+[4] Training scikit-learn SVM (Polynomial Kernel)...
+
+[5] scikit-learn SVM (Polynomial) Results:
+    Training time: 0.0014 seconds
+
+Training Metrics:
+  Accuracy:  1.0000
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+
+  Confusion Matrix:
+                Predicted
+                -1    1
+  Actual  -1     70     0
+          1       0    70
+
+Test Metrics:
+  Accuracy:  1.0000
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+
+  Confusion Matrix:
+                Predicted
+                -1    1
+  Actual  -1     30     0
+          1       0    30
+
+[6] Comparison Summary:
+    Metric          Scratch (Test)  sklearn (Test)  Difference     
+    ------------------------------------------------------------
+    Accuracy        1.0000          1.0000          0.0000         
+    Precision       1.0000          1.0000          0.0000         
+    Recall          1.0000          1.0000          0.0000         
+    F1-Score        1.0000          1.0000          0.0000         
+
+======================================================================
+  Problem 9: Hyperparameter Comparison
+======================================================================
+
+[1] Testing Different Learning Rates:
+
+    Learning Rate = 0.001
+    Test Accuracy: 1.0000, Support Vectors: 57
+
+    Learning Rate = 0.005
+    Test Accuracy: 1.0000, Support Vectors: 22
+
+    Learning Rate = 0.01
+    Test Accuracy: 1.0000, Support Vectors: 11
+
+    Learning Rate = 0.05
+    Test Accuracy: 1.0000, Support Vectors: 5
+
+[2] Testing Different Threshold Values:
+
+    Threshold = 1e-06
+    Test Accuracy: 1.0000, Support Vectors: 11
+
+    Threshold = 1e-05
+    Test Accuracy: 1.0000, Support Vectors: 11
+
+    Threshold = 0.0001
+    Test Accuracy: 1.0000, Support Vectors: 11
+
+    Threshold = 0.001
+    Test Accuracy: 1.0000, Support Vectors: 11
+
+======================================================================
+  ALL TESTS COMPLETED SUCCESSFULLY!
+======================================================================
+
+  Next step: Run 'python visualize_svm.py' to see decision boundaries.
+
+  Test completed at: 2025-10-25 12:56:33

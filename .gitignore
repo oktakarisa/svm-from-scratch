@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Exclude reference notebook
+SVM.ipynb
+
+# Reports and plots will be tracked
+# (comment out if you want to ignore them)
+# reports/
+# plots/
+
